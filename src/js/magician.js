@@ -1,14 +1,9 @@
-import CharacterStoned from './characterStoned.js';
+import StonedCharacter from './stonedCharacter.js';
 
-export default class Magician extends CharacterStoned {
-  constructor(name) {
-    super(
-      name,
-      'Magician',
-      100,
-      1,
-      10,
-      40,
-    );
+export default class Magician extends StonedCharacter {
+  constructor(name, type) {
+    super(name, type);
+    this.attack = 10;
+    this.defence = 40;
   }
 }
